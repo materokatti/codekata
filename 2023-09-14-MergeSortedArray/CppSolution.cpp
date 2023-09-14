@@ -1,4 +1,4 @@
-class Solution {
+class CppSolution {
 public:
     void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
         // Step 1: Initialize two pointers, p1 to the end of the valid elements in nums1, 
