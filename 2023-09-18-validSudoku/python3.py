@@ -11,11 +11,25 @@ class Solution:
             # so if any duplicates were present, the lengths will not match
             return len(nums) == len(set(nums))
 
-        #check row
+        # Row validation
         for row in board :
             if not is_valid(row) :
                 return False
             
-        #check column
+        # Column validation
+        for col in zip(*board):
+            if not is_valid(col):
+                return False
+    
+        # Subgrid validation
+        for i in range(0, 9, 3):
+            for j in range(0, 9, 3):
+                # Extracting each 3x3 subgrid and storing it in the 'subgrid' variable
+                subgrid = [board[x][y] for x in range(i, i+3) for y in range(j, j+3)]
+                # Checking the validity of the current subgrid
+                if not is_valid(subgrid):
+                    return False
+                
+        # If all columns and subgrids are valid, return True
+        return True
 
-        #check grid
