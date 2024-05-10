@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>문제 3 - HTML5 웹 프로그래밍</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      header,
+      nav,
+      footer {
+        background-color: #f0f0f0;
+        border-bottom: 1px solid #ddd;
+        padding: 10px;
+        text-align: center;
+      }
+      header h1 {
+        font-size: 24px;
+      }
+      nav a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: #333;
+      }
+      section {
+        padding: 20px;
+        margin: 10px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+      }
+      article {
+        margin-bottom: 20px;
+        padding: 10px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+      }
+      aside {
+        float: right;
+        width: 200px;
+        padding: 10px;
+        margin: 10px;
+        background-color: #e0e0ff;
+        border: 1px solid #ddd;
+      }
+      footer p {
+        margin: 0;
+        font-size: 14px;
+      }
+      .video-container {
+        text-align: center;
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>HTML5 웹 프로그래밍</h1>
+      <nav>
+        <a href="#home">홈</a>
+        <a href="#about">소개</a>
+        <a href="#contact">문의하기</a>
+      </nav>
+    </header>
+    <section>
+      <article>
+        <details>
+          <summary>202234-365800_황도윤</summary>
+          <iframe src="index.html" width="100%" height="300"></iframe>
+        </details>
+      </article>
+      <aside>
+        <h3>공지사항</h3>
+        <ul>
+          <li>HTML5 수업 시간 변경</li>
+          <li>과제 제출 마감일 연장</li>
+        </ul>
+      </aside>
+      <div class="video-container">
+        <h3>수업 예제 비디오</h3>
+        <video controls poster="poster_image.jpg" style="max-width: 100%">
+          <source src="video.mp4#t=5,17" type="video/mp4" />
+          지원하지 않는 브라우저입니다.
+        </video>
+      </div>
+    </section>
+    <footer>
+      <p>서울남부대학교 © 2024</p>
+    </footer>
+  </body>
+</html>
