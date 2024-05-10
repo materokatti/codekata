@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML5 웹 프로그래밍</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      h1 {
+        background-color: #f0f0f0;
+        color: #333;
+        text-align: center;
+        padding: 10px;
+      }
+      .info {
+        background-color: #cce7ff;
+        color: #003366;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        padding: 10px;
+        margin: 20px 0;
+        border: 2px solid #003366;
+        border-radius: 10px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: center;
+      }
+      th,
+      td {
+        border: 1px solid #003366;
+        padding: 8px;
+      }
+      th {
+        background-color: #ccffcc;
+        font-size: 16px;
+      }
+      td {
+        font-size: 14px;
+        position: relative;
+      }
+      .progress {
+        width: 80%;
+        background-color: #e0e0e0;
+        border-radius: 5px;
+        margin: 0 auto;
+        position: relative;
+      }
+      .progress-bar {
+        height: 20px;
+        background-color: #6699ff;
+        border-radius: 5px;
+        text-align: right;
+        padding-right: 5px;
+        color: white;
+      }
+      .tooltip {
+        display: none;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 30px;
+        background-color: #f9f9f9;
+        color: #333;
+        padding: 5px 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        font-size: 12px;
+        z-index: 1;
+      }
+      .progress:hover .tooltip {
+        display: block;
+      }
+      .average {
+        background-color: #66cc66;
+        text-align: right;
+        padding: 10px;
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;
+        margin: 10px 0;
+        width: 80%;
+        margin: 0 auto;
+      }
+      figure {
+        text-align: center;
+        margin: 30px 0;
+      }
+      figcaption {
+        font-size: 14px;
+        color: #333;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>HTML5 웹 프로그래밍</h1>
+    <div class="info">학번, 이름</div>
+    <table>
+      <thead>
+        <tr>
+          <th>과목</th>
+          <th>학년</th>
+          <th>학습진도율</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>국어</td>
+          <td>1</td>
+          <td>
+            <div class="progress">
+              <div class="progress-bar" style="width: 80%">80%</div>
+              <div class="tooltip">현재 학습 비율 80%</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>영어</td>
+          <td>2</td>
+          <td>
+            <div class="progress">
+              <div class="progress-bar" style="width: 60%">60%</div>
+              <div class="tooltip">현재 학습 비율 60%</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>수학</td>
+          <td>3</td>
+          <td>
+            <div class="progress">
+              <div class="progress-bar" style="width: 70%">70%</div>
+              <div class="tooltip">현재 학습 비율 70%</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <div class="average">평균 학습비율 70%</div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <figure>
+      <img
+        src="https://www.knou.ac.kr/images/knou/common/logo-header.png"
+        alt="그림 이미지"
+      />
+      <figcaption>한국 방송 통신 대학교</figcaption>
+    </figure>
+  </body>
+</html>
